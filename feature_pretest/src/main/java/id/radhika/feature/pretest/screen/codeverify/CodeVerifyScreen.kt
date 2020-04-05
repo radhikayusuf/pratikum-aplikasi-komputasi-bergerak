@@ -10,9 +10,7 @@ import id.radhika.lib.mvvm.BaseScreen
 class CodeVerifyScreen : BaseScreen<ScreenCodeVerifyBinding, CodeVerifyVM, CodeVerifyDao>(
     ScreenCodeVerifyBinding::inflate
 ) {
-    override fun onViewReady() {
-
-    }
+    override fun onViewReady() { }
 
     override fun render() = { dao: CodeVerifyDao ->
 

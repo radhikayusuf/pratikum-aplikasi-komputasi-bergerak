@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="PretestAppTheme" parent="NoActionBarTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPretestPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPretestPrimaryDark</item>
+        <item name="colorAccent">@color/colorPretestAccent</item>
+    </style>
+
+    <style name="PreTestButtonPrimary" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimens_32dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_24dp</item>
+        <item name="android:background">@drawable/background_primary_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/size_18sp</item>
+    </style>
+
+    <style name="PreTestButtonSecondary" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimens_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_16dp</item>
+        <item name="android:background">@drawable/background_secondary_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/whiteThree</item>
+        <item name="android:textSize">@dimen/size_18sp</item>
+    </style>
+
+    <style name="PreTestCodeVerifyEditTextTheme" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimens_16dp</item>
+        <item name="android:background">@drawable/background_primary_code_edittext</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/size_18sp</item>
+    </style>
+
+</resources>

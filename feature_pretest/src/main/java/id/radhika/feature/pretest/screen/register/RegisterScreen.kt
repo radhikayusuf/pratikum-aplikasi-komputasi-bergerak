@@ -1,7 +1,8 @@
 package id.radhika.feature.pretest.screen.register
 
 import id.radhika.feature.pretest.databinding.ScreenRegisterBinding
-import id.radhika.feature.pretest.screen.welcome.InformationVM
+import id.radhika.feature.pretest.screen.information.InformationDao
+import id.radhika.feature.pretest.screen.information.InformationVM
 import id.radhika.lib.mvvm.BaseScreen
 
 /**
@@ -12,7 +13,7 @@ class RegisterScreen : BaseScreen<ScreenRegisterBinding, InformationVM, Informat
     ScreenRegisterBinding::inflate
 ) {
     override fun onViewReady() {
-
+        binding.pageName.text = "Register Screen"
     }
 
     override fun render() = { dao: InformationDao ->

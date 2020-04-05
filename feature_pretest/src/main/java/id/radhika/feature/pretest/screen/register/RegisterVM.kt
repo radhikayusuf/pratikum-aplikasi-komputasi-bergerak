@@ -1,6 +1,7 @@
 package id.radhika.feature.pretest.screen.welcome
 
 import id.radhika.feature.pretest.data.PretestUseCase
+import id.radhika.feature.pretest.screen.register.RegisterDao
 import id.radhika.lib.mvvm.BaseVM
 
 /**
