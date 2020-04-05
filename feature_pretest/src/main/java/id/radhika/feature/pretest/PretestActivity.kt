@@ -13,7 +13,7 @@ class PretestActivity : AppCompatActivity() {
     private val welcomeScreen by lazy { WelcomeScreen() }
     private val codeVerifyScreen by lazy { CodeVerifyScreen() }
     private val registerScreen by lazy { RegisterScreen() }
-    private val infomationScreen by lazy { InformationScreen() }
+    private val informationScreen by lazy { InformationScreen() }
 
     private var currentPagePosition = 0
 
@@ -38,7 +38,7 @@ class PretestActivity : AppCompatActivity() {
         when (currentPagePosition) {
             1 -> supportFragmentManager.replaceScreen(codeVerifyScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out)
             2 -> supportFragmentManager.replaceScreen(registerScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out)
-            3 -> supportFragmentManager.replaceScreen(infomationScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out)
+            3 -> supportFragmentManager.replaceScreen(informationScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out)
             else -> supportFragmentManager.replaceScreen(welcomeScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out)
         }
     }
