@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".screen.welcome.WelcomeScreen">
 
@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical"
         android:background="@color/whiteThree"
+        android:orientation="vertical"
         android:padding="@dimen/dimens_16dp">
 
         <TextView
@@ -32,9 +32,11 @@
             android:textSize="@dimen/size_20sp" />
 
         <EditText
+            android:id="@+id/inputCode"
             style="@style/PreTestCodeVerifyEditTextTheme"
             android:gravity="center"
             android:padding="@dimen/dimens_16dp"
+            android:textAllCaps="true"
             android:textStyle="bold"
             tools:text="AB31SJ" />
 
@@ -45,6 +47,7 @@
             android:text="@string/text_accept_tnc" />
 
         <Button
+            android:id="@+id/buttonMasuk"
             style="@style/PreTestButtonPrimary"
             android:text="@string/text_masuk" />
 
@@ -59,22 +62,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:paddingTop="@dimen/dimens_24dp"
-            android:paddingBottom="@dimen/dimens_16dp"
-            android:orientation="vertical">
+            android:paddingBottom="@dimen/dimens_16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/text_belum_punya_kode_keluarga"
-                android:textSize="@dimen/size_18sp"
-                android:gravity="center"/>
+                android:textSize="@dimen/size_18sp" />
 
             <Button
+                style="@style/PreTestButtonSecondary"
                 android:layout_marginStart="@dimen/dimens_16dp"
                 android:layout_marginEnd="@dimen/dimens_16dp"
-                android:text="@string/text_beli_kode_keluarga_disini"
-                style="@style/PreTestButtonSecondary"/>
+                android:text="@string/text_beli_kode_keluarga_disini" />
 
         </LinearLayout>
 

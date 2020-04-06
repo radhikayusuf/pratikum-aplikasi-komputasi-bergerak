@@ -1,15 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".screen.welcome.WelcomeScreen">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/pageName"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/whiteThree"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_16dp">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            android:layout_marginBottom="@dimen/dimens_8dp"
+            android:text="@string/text_nama_panggilan_kamu"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/size_28sp" />
+
+        <EditText
+            android:id="@+id/inputNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimens_24dp"
+            android:hint="@string/text_hint_contoh_budi"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:paddingBottom="@dimen/dimens_24dp"
+            android:textSize="@dimen/size_20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimens_8dp"
+            android:text="@string/text_umur_kamu"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/size_28sp" />
+
+        <EditText
+            android:id="@+id/inputUmur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimens_24dp"
+            android:hint="@string/text_hint_contoh_12"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/dimens_24dp"
+            android:textSize="@dimen/size_20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        style="@style/PreTestButtonPrimary"
+        android:layout_marginStart="@dimen/dimens_16dp"
+        android:layout_marginEnd="@dimen/dimens_16dp"
+        android:text="@string/text_selanjutnya" />
+
+
+</LinearLayout>

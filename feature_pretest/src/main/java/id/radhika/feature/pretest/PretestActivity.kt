@@ -33,12 +33,16 @@ class PretestActivity : AppCompatActivity() {
         else super.onBackPressed()
     }
 
-    fun movePage(next: Boolean) {
+    fun movePage(next: Boolean, argument: (Bundle.() -> Unit)? = null) {
+        if (currentPagePosition >= 3 && !next) {
+            finish()
+            return
+        }
         currentPagePosition += if (next) 1 else -1
         when (currentPagePosition) {
             1 -> supportFragmentManager.replaceScreen(codeVerifyScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out)
             2 -> supportFragmentManager.replaceScreen(registerScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out)
-            3 -> supportFragmentManager.replaceScreen(informationScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out)
+            3 -> supportFragmentManager.replaceScreen(informationScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out, argument)
             else -> supportFragmentManager.replaceScreen(welcomeScreen, R.id.frameContent, android.R.animator.fade_in, android.R.animator.fade_out)
         }
     }

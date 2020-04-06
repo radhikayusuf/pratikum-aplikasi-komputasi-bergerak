@@ -1,5 +1,6 @@
 package id.radhika.lib.mvvm.util
 
+import android.os.Bundle
 import android.widget.Toast
 import androidx.annotation.AnimRes
 import androidx.annotation.AnimatorRes
@@ -37,12 +38,18 @@ fun FragmentManager.showScreen(screen: BaseScreen<*, *, *>) {
 fun FragmentManager.replaceScreen(
     screen: BaseScreen<*, *, *>, @IdRes id: Int,
     @AnimatorRes @AnimRes animIn: Int = -1,
-    @AnimatorRes @AnimRes animOut: Int = -1
+    @AnimatorRes @AnimRes animOut: Int = -1,
+    argument: (Bundle.() -> Unit)? = null
 ) {
     beginTransaction().also { transact ->
         if (animIn != -1 && animOut != -1)
             transact.setCustomAnimations(animIn, animOut)
-        transact.replace(id, screen)
+
+        transact.replace(id, screen.also {
+            val arg = Bundle()
+            argument?.invoke(arg)
+            it.setArguments(arg)
+        })
     }.commit()
 }
 

@@ -13,6 +13,18 @@ class CodeVerifyVM : BaseVM<CodeVerifyDao, PretestUseCase>() {
 
     }
 
+    fun validateValue(code: String?) {
+        contentData.errorCode = null
+
+        var validResult = true
+        if (code?.trim()?.length ?: 0 < 4) {
+            validResult = false
+            contentData.errorCode = "Harap isi code minimal 4 digit"
+        }
+
+        contentData.isValid = validResult
+    }
+
     override fun getDao() = CodeVerifyDao()
     override fun createUseCase(): PretestUseCase = PretestUseCase()
 }
