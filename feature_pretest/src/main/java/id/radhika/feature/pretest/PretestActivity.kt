@@ -8,6 +8,13 @@ import id.radhika.feature.pretest.screen.register.RegisterScreen
 import id.radhika.feature.pretest.screen.welcome.WelcomeScreen
 import id.radhika.lib.mvvm.util.*
 
+/**
+ * Created by
+ * Nama  : Radhika Yusuf Alifiansyah
+ * NIM   : 10117909
+ * Kelas : IF6K
+ * on 05/Apr/2020
+ **/
 class PretestActivity : AppCompatActivity() {
 
     private val welcomeScreen by lazy { WelcomeScreen() }
