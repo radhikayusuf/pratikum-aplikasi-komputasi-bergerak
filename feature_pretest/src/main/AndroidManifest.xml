@@ -3,7 +3,9 @@
     package="id.radhika.feature.pretest">
 
     <application>
-        <activity android:name=".PretestActivity"></activity>
+        <activity
+            android:name=".PretestActivity"
+            android:theme="@style/PretestAppTheme" />
     </application>
 
 </manifest>

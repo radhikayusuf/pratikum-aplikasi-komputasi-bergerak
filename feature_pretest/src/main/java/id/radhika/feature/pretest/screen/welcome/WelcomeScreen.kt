@@ -1,5 +1,7 @@
 package id.radhika.feature.pretest.screen.welcome
 
+import android.view.View
+import id.radhika.feature.pretest.PretestActivity
 import id.radhika.feature.pretest.databinding.ScreenWelcomeBinding
 import id.radhika.lib.mvvm.BaseScreen
 
@@ -9,9 +11,9 @@ import id.radhika.lib.mvvm.BaseScreen
  **/
 class WelcomeScreen : BaseScreen<ScreenWelcomeBinding, WelcomeVM, WelcomeDao>(
     ScreenWelcomeBinding::inflate
-) {
+), View.OnClickListener {
     override fun onViewReady() {
-
+        binding.buttonMulai.setOnClickListener(this)
     }
 
     override fun render() = { dao: WelcomeDao ->
@@ -19,4 +21,9 @@ class WelcomeScreen : BaseScreen<ScreenWelcomeBinding, WelcomeVM, WelcomeDao>(
     }
 
     override fun getViewModel() = WelcomeVM::class.java
+
+    override fun onClick(v: View?) {
+        if (requireActivity() is PretestActivity)
+            (requireActivity() as PretestActivity).movePage(true)
+    }
 }

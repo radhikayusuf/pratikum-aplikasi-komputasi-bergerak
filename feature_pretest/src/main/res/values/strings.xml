@@ -1,5 +1,19 @@
 <resources>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_title_welcome">Monitor Membantu Anda Mengontrol HP Anak</string>
+    <string name="text_kode_keluarga">Kode Keluarga</string>
+    <string name="text_ketikan_kode_keluarga_yang_ayah_bunda_miliki_disini">Ketikan kode keluarga yang Ayah Bunda miliki disini</string>
+    <string name="text_mulai">Mulai</string>
+    <string name="text_accept_tnc">Dengan menekan tombol masuk berarti Anda menyetujui <b>Ketentuan Pengguna</b> dan <b>Kebijakan Data</b> kami</string>
+    <string name="text_beli_kode_keluarga_disini">Beli kode keluarga disini</string>
+    <string name="text_belum_punya_kode_keluarga">Belum punya kode keluarga?</string>
+    <string name="text_masuk">Masuk</string>
+    <string name="text_nama_panggilan_kamu">Nama Panggilan Kamu</string>
+    <string name="text_hint_contoh_budi">Contoh : Budi</string>
+    <string name="text_umur_kamu">Umur Kamu</string>
+    <string name="text_hint_contoh_12">Contoh : 21</string>
+    <string name="text_selanjutnya">Selanjutnya</string>
+    <string name="text_information">Beres! Sekarang %s\nudah bisa ngecek\npenggunaan HP %s\ntiap hari buat bantu %s\nngatur waktu :)</string>
+    <string name="text_oke">Oke</string>
 </resources>

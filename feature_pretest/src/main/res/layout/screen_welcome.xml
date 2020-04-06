@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/whiteThree"
     tools:context=".screen.welcome.WelcomeScreen">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/pageName"
+
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_get_start_timitory" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/text_title_welcome"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dimens_28dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/dimens_16dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardElevation="@dimen/dimens_8dp">
+
+        <Button
+            android:id="@+id/buttonMulai"
+            style="@style/PreTestButtonPrimary"
+            android:layout_marginStart="@dimen/dimens_16dp"
+            android:layout_marginEnd="@dimen/dimens_16dp"
+            android:text="@string/text_mulai" />
+
+    </androidx.cardview.widget.CardView>
+
 
 </FrameLayout>

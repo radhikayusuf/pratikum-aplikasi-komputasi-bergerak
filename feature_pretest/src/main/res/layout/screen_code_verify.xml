@@ -1,15 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".screen.welcome.WelcomeScreen">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/pageName"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/whiteThree"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_16dp">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            android:layout_marginBottom="@dimen/dimens_8dp"
+            android:text="@string/text_kode_keluarga"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/size_32sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimens_24dp"
+            android:text="@string/text_ketikan_kode_keluarga_yang_ayah_bunda_miliki_disini"
+            android:textSize="@dimen/size_20sp" />
+
+        <EditText
+            android:id="@+id/inputCode"
+            style="@style/PreTestCodeVerifyEditTextTheme"
+            android:gravity="center"
+            android:padding="@dimen/dimens_16dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            tools:text="AB31SJ" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_accept_tnc" />
+
+        <Button
+            android:id="@+id/buttonMasuk"
+            style="@style/PreTestButtonPrimary"
+            android:text="@string/text_masuk" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardElevation="@dimen/dimens_8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimens_24dp"
+            android:paddingBottom="@dimen/dimens_16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_belum_punya_kode_keluarga"
+                android:textSize="@dimen/size_18sp" />
+
+            <Button
+                style="@style/PreTestButtonSecondary"
+                android:layout_marginStart="@dimen/dimens_16dp"
+                android:layout_marginEnd="@dimen/dimens_16dp"
+                android:text="@string/text_beli_kode_keluarga_disini" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

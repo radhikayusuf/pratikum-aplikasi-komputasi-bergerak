@@ -1,4 +1,4 @@
-rootProject.name='starterkit-app'
+rootProject.name='pratikum-akb'
 include ':application'
 include ':lib_data'
 include ':lib_ui'

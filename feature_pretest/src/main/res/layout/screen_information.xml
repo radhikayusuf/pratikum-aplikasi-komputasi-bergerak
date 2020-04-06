@@ -3,12 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/dimens_16dp"
     tools:context=".screen.welcome.WelcomeScreen">
 
     <TextView
-        android:id="@+id/pageName"
+        android:id="@+id/informationPage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="@dimen/dimens_16dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/size_28sp"
+        tools:text="@string/text_information" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        style="@style/PreTestButtonPrimary"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/dimens_48dp"
+        android:layout_marginEnd="@dimen/dimens_48dp"
+        android:text="@string/text_oke" />
 
 </FrameLayout>
