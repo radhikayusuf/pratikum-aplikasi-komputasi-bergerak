@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     android:padding="@dimen/dimens_16dp">
 
     <View
@@ -30,16 +30,16 @@
         android:id="@+id/item4"
         android:layout_width="@dimen/dimens_48dp"
         android:layout_height="@dimen/dimens_48dp"
-        android:layout_toStartOf="@id/item2"
         android:layout_below="@id/item3"
+        android:layout_toStartOf="@id/item2"
         android:background="@color/colorBlack" />
 
     <View
         android:id="@+id/item5"
         android:layout_width="@dimen/dimens_48dp"
         android:layout_height="@dimen/dimens_48dp"
-        android:layout_toStartOf="@id/item2"
         android:layout_below="@id/item4"
+        android:layout_toStartOf="@id/item2"
         android:background="#FF9800" />
 
 </RelativeLayout>
