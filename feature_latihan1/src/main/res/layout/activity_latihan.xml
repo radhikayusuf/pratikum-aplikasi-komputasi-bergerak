@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LatihanPertamaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonThis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This" />
+
+        <Button
+            android:id="@+id/buttonThat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="That" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/firstFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/firstFragment"
+            android:name="id.radhika.feature.latihan1.screen.firstpractice.FirstScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/secondFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/secondFragment"
+            android:name="id.radhika.feature.latihan1.screen.secondpractice.SecondScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</RelativeLayout>
