@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">feature_latihan1</string>
+    <string name="text_masukan_nama">Masukan Nama Disini</string>
+    <string name="text_masukan_alamat">Masukan Alamat Disini</string>
+</resources>
