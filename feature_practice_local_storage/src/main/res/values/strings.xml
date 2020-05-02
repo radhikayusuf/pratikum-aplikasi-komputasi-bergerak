@@ -1,0 +1,7 @@
+<resources>
+    <string name="text_search_something">Search something</string>
+    <string name="text_title">Title</string>
+    <string name="text_your_notes">Your notes</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_last_edited_s">Last Edited : %s</string>
+</resources>

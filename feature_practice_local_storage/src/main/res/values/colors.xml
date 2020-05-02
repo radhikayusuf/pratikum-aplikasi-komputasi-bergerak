@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorLocalStoragePrimary">#3e43e9</color>
+    <color name="colorLocalStoragePrimaryDark">#482d73</color>
+    <color name="colorLocalStorageAccent">#ffe41e</color>
+</resources>
