@@ -9,6 +9,8 @@ import androidx.annotation.StringRes
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import id.radhika.lib.mvvm.BaseScreen
+import java.text.SimpleDateFormat
+import java.util.*
 
 /**
  * Created by Radhika Yusuf Alifiansyah
@@ -58,4 +60,19 @@ fun FragmentManager.hideAll() {
     beginTransaction().also { transact ->
         contents.forEach { transact.hide(it) }
     }.commit()
+}
+
+fun Long.convertLongToTime(): String {
+    val date = Date(this)
+    val format = SimpleDateFormat.getDateTimeInstance()
+    return format.format(date)
+}
+
+fun currentTimeToLong(): Long {
+    return System.currentTimeMillis()
+}
+
+fun convertDateToLong(date: String): Long {
+    val df = SimpleDateFormat("yyyy.MM.dd HH:mm")
+    return df.parse(date).time
 }

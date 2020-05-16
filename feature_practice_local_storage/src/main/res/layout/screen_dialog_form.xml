@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_16dp">
+
+        <EditText
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimens_16dp"
+            android:background="@color/colorWhiteSmoke"
+            android:hint="@string/text_title"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/dimens_8dp" />
+
+        <EditText
+            android:id="@+id/textNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhiteSmoke"
+            android:gravity="top"
+            android:hint="@string/text_your_notes"
+            android:imeOptions="actionDone"
+            android:lines="5"
+            android:maxLength="200"
+            android:padding="@dimen/dimens_8dp" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            style="@style/LocalStoragePrimaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/text_submit"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

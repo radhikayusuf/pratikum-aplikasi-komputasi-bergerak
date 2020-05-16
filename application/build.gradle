@@ -43,6 +43,7 @@ dependencies {
     implementation project(path: ':lib_mvvm')
     implementation project(path: ':feature_pretest')
     implementation project(path: ':feature_latihan1')
+    implementation project(path: ':feature_practice_local_storage')
     implementation project(path: ':feature_uts')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 
