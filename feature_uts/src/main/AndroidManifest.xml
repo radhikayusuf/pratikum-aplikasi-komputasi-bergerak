@@ -3,6 +3,6 @@
     <application>
         <activity
             android:name=".UTSActivity"
-            android:theme="@style/NoActionBarTheme" />
+            android:theme="@style/UTSAppTheme" />
     </application>
 </manifest>

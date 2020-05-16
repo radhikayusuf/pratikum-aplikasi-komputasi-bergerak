@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="PretestAppTheme" parent="NoActionBarTheme">
+    <style name="UTSAppTheme" parent="NoActionBarTheme">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/warmBlue</item>
         <item name="colorPrimaryDark">@color/purpleishBlue</item>
