@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPretestPrimary">@color/colorWhiteSmoke</color>
+    <color name="colorPretestPrimaryDark">@color/colorGray</color>
+    <color name="colorPretestAccent">@color/colorBlueOcean</color>
+
+    <color name="cyanPrimary">#01D8C4</color>
+    <color name="backgroundGray">#dedede</color>
+
+    <color name="gunMetal">#525b60</color>
+    <color name="lavenderBlue">#8084f6</color>
+    <color name="sunflower">#ffc50d</color>
+    <color name="whiteThree">#f8f8f8</color>
+    <color name="coolGrey">#bababb</color>
+    <color name="purpleishBlue">#494dea</color>
+    <color name="whitePreTest">#dedede</color>
+    <color name="butterscotch">#fcb83a</color>
+    <color name="blueberry">#482d73</color>
+    <color name="sunYellow">#ffe41e</color>
+    <color name="warmBlue">#3e43e9</color>
+</resources>

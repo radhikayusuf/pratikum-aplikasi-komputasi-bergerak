@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_192dp"
+            android:src="@drawable/ic_welcome_parent" />
+
+        <TextView
+            android:id="@+id/titleIntroRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            android:gravity="center"
+            android:text="@string/text_introduce_app"
+            android:textSize="@dimen/size_20sp" />
+
+        <TextView
+            android:id="@+id/placeHolderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            android:text="@string/text_placeholder_nama_panggilan_anak" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/text_hint_isi_dengan_nama_anak_anda"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:paddingTop="@dimen/dimens_12dp"
+            android:paddingBottom="@dimen/dimens_12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_1dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            android:text="@string/text_jenis_kelamin" />
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_laki_laki"
+                android:textColor="@android:color/secondary_text_light" />
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_perempuan"
+                android:textColor="@android:color/secondary_text_light" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/errorGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_4dp"
+            android:textColor="@color/colorRed"
+            android:visibility="gone"
+            tools:text="Harap isi jenis kelamin!" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_1dp"
+            android:layout_marginTop="@dimen/dimens_8dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            android:text="@string/text_placeholder_umur_saat_ini" />
+
+        <EditText
+            android:id="@+id/inputUmur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/text_hint_cth_12"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:paddingTop="@dimen/dimens_12dp"
+            android:paddingBottom="@dimen/dimens_12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_1dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            android:text="@string/text_desc_age_usage" />
+
+        <Button
+            android:id="@+id/registerAction"
+            style="@style/UTSButtonPrimary"
+            android:layout_width="match_parent"
+            android:text="@string/text_daftar" />
+
+
+    </LinearLayout>
+
+</ScrollView>

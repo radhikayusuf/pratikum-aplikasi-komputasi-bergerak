@@ -7,7 +7,6 @@ Untuk memenuhi mata kuliah Aplikasi Komputasi Bergerak
  - [code](https://github.com/radhikayusuf/pratikum-aplikasi-komputasi-bergerak/tree/pratikum/020420/pre_test)
  - [proses pengerjaan](https://github.com/radhikayusuf/pratikum-aplikasi-komputasi-bergerak/pull/1)
 
-
 #### 11 April 2020 - Latihan 1
  - [code](https://github.com/radhikayusuf/pratikum-aplikasi-komputasi-bergerak/tree/pratikum/110420/latihan1)
  - [proses pengerjaan](https://github.com/radhikayusuf/pratikum-aplikasi-komputasi-bergerak/pull/2)
@@ -15,3 +14,7 @@ Untuk memenuhi mata kuliah Aplikasi Komputasi Bergerak
  #### 26 April 2020 - Latihan 3
  - [code](https://github.com/radhikayusuf/pratikum-aplikasi-komputasi-bergerak/tree/pratikum/260420/latihan3)
  - [proses pengerjaan](https://github.com/radhikayusuf/pratikum-aplikasi-komputasi-bergerak/pull/4)
+ 
+  #### 16 May 2020 - UTS
+ - [code](https://github.com/radhikayusuf/pratikum-aplikasi-komputasi-bergerak/tree/uts)
+ - [proses pengerjaan](https://github.com/radhikayusuf/pratikum-aplikasi-komputasi-bergerak/pull/5)

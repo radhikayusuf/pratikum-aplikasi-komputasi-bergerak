@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.radhika.feature.uts">
+    <application>
+        <activity
+            android:name=".UTSActivity"
+            android:theme="@style/UTSAppTheme" />
+    </application>
+</manifest>

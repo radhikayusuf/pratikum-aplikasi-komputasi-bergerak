@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray"
+    android:orientation="vertical"
+    android:padding="@dimen/dimens_16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimens_16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_168dp"
+                android:src="@drawable/ic_welcome_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimens_16dp"
+                android:text="@string/text_yeay_selamat"
+                android:textSize="@dimen/size_20sp" />
+
+            <TextView
+                android:id="@+id/text_welcome_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_16dp"
+                android:layout_marginEnd="@dimen/dimens_16dp"
+                android:gravity="center"
+                android:text="@string/text_welcome_description"
+                android:textSize="@dimen/size_18sp" />
+
+            <TextView
+                style="@style/UTSButtonSecondary"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingStart="@dimen/dimens_32dp"
+                android:paddingTop="@dimen/dimens_12dp"
+                android:paddingEnd="@dimen/dimens_32dp"
+                android:paddingBottom="@dimen/dimens_12dp"
+                android:text="@string/text_dummy_code"
+                android:textColor="@color/cyanPrimary"
+                android:textSize="@dimen/size_24sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens_16dp"
+        android:layout_marginTop="@dimen/dimens_32dp"
+        android:layout_marginEnd="@dimen/dimens_16dp"
+        android:gravity="center"
+        android:text="@string/text_bingung_saat_membuat_kesepakatan_instalasi_dengan_anak"
+        android:textSize="@dimen/size_16sp" />
+
+    <Button
+        style="@style/UTSButtonPrimary"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="@dimen/dimens_48dp"
+        android:paddingEnd="@dimen/dimens_48dp"
+        android:text="Lihat Tutorial"
+        android:textSize="@dimen/size_20sp" />
+
+</LinearLayout>

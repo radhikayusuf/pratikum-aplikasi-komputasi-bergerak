@@ -47,5 +47,19 @@
         android:layout_height="@dimen/dimens_1dp"
         android:background="@color/colorGray" />
 
+    <TextView
+        android:id="@+id/uts"
+        style="@style/ClickableContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimens_16dp"
+        android:text="@string/text_uts"
+        android:textSize="@dimen/size_18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_1dp"
+        android:background="@color/colorGray" />
+
 
 </LinearLayout>
