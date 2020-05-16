@@ -17,7 +17,7 @@ class RegisterScreen : BaseScreen<ScreenRegisterUtsBinding, RegisterVM, Register
 ), View.OnClickListener {
 
     override fun onViewReady() {
-        binding.inputName.setOnClickListener(this)
+        binding.registerAction.setOnClickListener(this)
     }
 
     override fun render() = { dao: RegisterDao ->
