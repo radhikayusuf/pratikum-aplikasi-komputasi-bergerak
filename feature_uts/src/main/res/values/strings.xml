@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="text_introduce_app">Ayah Bunda silahkan mengisi data anak di bawah ini</string>
+    <string name="text_placeholder_nama_panggilan_anak">Nama Panggilan Anak</string>
+    <string name="text_hint_isi_dengan_nama_anak_anda">Isi dengan nama anak anda</string>
+    <string name="text_jenis_kelamin">Jenis Kelamin</string>
+    <string name="text_laki_laki">Laki - laki</string>
+    <string name="text_perempuan">Perempuan</string>
+    <string name="text_placeholder_umur_saat_ini">Umur Saat ini</string>
+    <string name="text_hint_cth_12">Cth : 12</string>
+    <string name="text_desc_age_usage">*Umur Diperlukan untuk rekomendasi waktu penggunaan handphone anak anda</string>
+    <string name="text_daftar">Daftar</string>
+    <string name="text_bingung_saat_membuat_kesepakatan_instalasi_dengan_anak">Bingung saat membuat kesepakatan instalasi dengan anak?</string>
+    <string name="text_welcome_description">%s %s %s tahun Berhasil Ditambahkan. Silahkan Gunakan Kode Ini Untuk Masuk Kedalam Aplikasi Anak</string>
+    <string name="text_yeay_selamat">Yeay, Selamat :)</string>
+    <string name="text_dummy_code">AVGR99</string>
+
+</resources>
